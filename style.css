@@ -1,0 +1,154 @@
+/* style.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+body {
+    background: linear-gradient(135deg, #181f42, #0361a4);
+    color: #333;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: backgroundAnimation 5s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.generator {
+    background-color: #fff;
+    width: 350px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+div.password {
+    display: grid;
+    grid-template-columns: auto min-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+div.password input {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 0;
+    color: #333;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+div.password button {
+    padding: 0 15px;
+    background-color: #4caf50;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+div.password button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+div.range {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+}
+
+div.range span {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-left: 20px;
+    min-width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+div.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+div.options label {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+div.options label:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+button.generate {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.generate:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
